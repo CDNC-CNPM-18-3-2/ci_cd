@@ -4,10 +4,28 @@ orbs:
   node: circleci/node@4.7
   katalon-studio: katalon/katalon-studio@23.0.11
 
+jobs:
+  run_tests:
+    docker:
+      - image: circleci/node:14
+    steps:
+    - checkout
+    - run:
+        name: Install npm dependencies
+        command: |
+          npm install --save
+    - run:
+        name: Start node server
+        command: |
+          npm start
+        background: true
+    - run:
+        name: Run Unit Tests
+        command: |
+          sleep 30
+          npm run test
+
 workflows:
   build-run-and-test: 
     jobs:
-      - node/run:
-          version: '16.10'
-          pkg-manager: npm
-          npm-run: start
+      - run_tests
