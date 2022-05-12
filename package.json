@@ -8,6 +8,11 @@
     "start-dev": "export NODE_ENV=development; npm run build-dev && node server.js",
     "start": "export NODE_ENV=production; npm run build && node server.js",
     "clean": "rm -r dist/*",
+    "build-dev:win": "npm run clean:win && webpack  --inline --progress --color --config build/webpack.dev.conf.js",
+    "build:win": "npm run clean:win && webpack  --inline --progress --color --config build/webpack.prod.conf.js",
+    "start-dev:win": "set NODE_ENV=development && npm run build-dev && node server.js",
+    "start:win": "set NODE_ENV=production && npm run build:win && node server.js",
+    "clean:win": "",
     "test-i": "mocha test/backend/integration --timeout 60000",
     "test-db": "mocha test/db --timeout 60000",
     "test": "npm run test-i && npm run test-db"
@@ -48,6 +53,7 @@
     "eslint": "^7.0.0",
     "faker": "^4.1.0",
     "html-webpack-plugin": "^4.2.0",
+    "mocha": "^10.0.0",
     "mongodb-memory-server": "^6.5.2",
     "sinon": "^9.0.2",
     "vue-loader": "^15.9.1",
@@ -55,7 +61,7 @@
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.42.1",
     "webpack-bundle-analyzer": "^3.6.1",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-merge": "^4.2.2"
   }
 }
