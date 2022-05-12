@@ -4,9 +4,45 @@ orbs:
   node: circleci/node@4.7
   katalon-studio: katalon/katalon-studio@23.0.11
 
+jobs:
+  run_tests:
+    docker:
+      - image: cimg/node:14.15.3
+    steps:
+    - checkout
+    - run:
+        name: Install npm dependencies
+        command: |
+          npm install --save
+    - run:
+        name: Start node server
+        command: |
+          npm start
+        background: true
+    - run:
+        name: Run Unit Tests
+        command: |
+          sleep 15
+          npm run test
+  deploy:
+    docker:
+    - image: cimg/base
+    steps:
+    - run:
+        name: Trigger host deployment
+        command: |
+          curl $DEPLOY_HOOK
+          echo 'Triggered deploy'
+
 workflows:
-  start: 
+  build-run-and-test: 
     jobs:
-      - node/test:
-          version: '16.10'
-          pkg-manager: npm
+      - run_tests
+      - deploy:
+          requires:
+            - run_tests
+          filters:
+            branches:
+              only:
+                - main
+      
