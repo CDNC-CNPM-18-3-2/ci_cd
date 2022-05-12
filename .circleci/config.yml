@@ -24,8 +24,25 @@ jobs:
         command: |
           sleep 15
           npm run test
+  deploy:
+    docker:
+    - image: cimg/base
+    steps:
+    - run:
+        name: Trigger host deployment
+        command: |
+          curl $DEPLOY_HOOK
+          echo 'Triggered deploy'
 
 workflows:
   build-run-and-test: 
     jobs:
       - run_tests
+      - deploy:
+          requires:
+            - run_tests
+          filters:
+            branches:
+              only:
+                - main
+      
