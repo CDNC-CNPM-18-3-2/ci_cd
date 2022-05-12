@@ -22,7 +22,7 @@ jobs:
     - run:
         name: Run Unit Tests
         command: |
-          sleep 20
+          sleep 15
           npm run test
 
 workflows:
