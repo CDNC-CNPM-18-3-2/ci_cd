@@ -5,8 +5,8 @@ orbs:
   katalon-studio: katalon/katalon-studio@23.0.11
 
 workflows:
-  start: 
+  build-run-and-test: 
     jobs:
-      - node/test:
+      - node/run:
           version: '16.10'
-          pkg-manager: npm
+          pkg-manager: npm 
