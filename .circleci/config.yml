@@ -56,7 +56,7 @@ workflows:
           #       - main
       - katalon-studio/run:
           version: "latest"
-          command_arguments: '-browserType="Chrome" -retry=2 -statusDelay=15 -projectPath="/tmp/project/test_katalon" -testSuitePath="Test Suites/TS_Staging"'
+          command_arguments: '-browserType="Chrome" -retry=2 -statusDelay=15 -projectPath="/root/project/test_katalon" -testSuitePath="Test Suites/TS_Staging"'
           requires:
             - deploy_staging
       - deploy:
