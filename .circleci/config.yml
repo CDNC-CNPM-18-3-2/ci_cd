@@ -3,6 +3,7 @@ version: 2.1
 orbs:
   node: circleci/node@4.7
   heroku: circleci/heroku@1.2.6
+  katalon-studio: katalon/katalon-studio@23.0.11
 
 jobs:
   run_unittests:
@@ -53,9 +54,11 @@ workflows:
             branches:
               only:
                 - main
-      - run_tests:
+      - katalon-studio/run:
+          version: "latest"
+          command_arguments: '-browserType="Chrome" -retry=2 -statusDelay=15 --projectPath="/tmp/project/test_katalon" -testSuitePath="Test Suites/TS_RegressionTest"'
           requires:
             - deploy_staging
       - deploy:
           requires:
-            - run_tests
+            - katalon-studio/run
