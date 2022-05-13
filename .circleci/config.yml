@@ -2,47 +2,64 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.7
-  katalon-studio: katalon/katalon-studio@23.0.11
+  heroku: circleci/heroku@1.2.6
 
 jobs:
-  run_tests:
+  run_unittests:
     docker:
       - image: cimg/node:14.15.3
     steps:
-    - checkout
-    - run:
-        name: Install npm dependencies
-        command: |
-          npm install --save
-    - run:
-        name: Start node server
-        command: |
-          npm start
-        background: true
-    - run:
-        name: Run Unit Tests
-        command: |
-          sleep 15
-          npm run test
+      - checkout
+      - run:
+          name: Install npm dependencies
+          command: |
+            npm install --save
+      - run:
+          name: Run Unit Tests
+          command: |
+            npm run test
+  deploy_staging:
+    executor: heroku/default
+    steps:
+      - checkout
+      - heroku/install
+      - heroku/deploy-via-git
+  run_tests:
+    docker:
+      - image: katalonstudio/katalon
+    steps:
+      - checkout
+      - run:
+          name: Execute Katalon Studio
+          command: cd test_katalon && katalon-execute.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_Staging" -executionProfile="default" -browserType="Chrome (headless)"
+      - store-test_results:
+          path: ./report
+      - store-artifacts:
+          path: ./report
   deploy:
     docker:
-    - image: cimg/base:2022.04
+      - image: cimg/base:2022.04
     steps:
-    - run:
-        name: Trigger host deployment
-        command: |
-          curl $DEPLOY_HOOK
-          echo 'Triggered deploy'
+      - run:
+          name: Trigger host deployment
+          command: |
+            curl $DEPLOY_HOOK
+            echo 'Triggered deploy'
 
 workflows:
-  build-run-and-test: 
+  build-run-and-test:
     jobs:
-      - run_tests
-      - deploy:
+      - run_unittests
+      - deploy_staging:
           requires:
-            - run_tests
+            - run_unittests
           filters:
             branches:
               only:
                 - main
-      
+      - run_tests:
+          requires:
+            - deploy_staging
+      - deploy:
+          requires:
+            - run_tests
