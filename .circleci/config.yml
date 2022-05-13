@@ -54,14 +54,18 @@ workflows:
           #   branches:
           #     only:
           #       - main
-      - katalon-studio/run:
-          version: "latest"
-          command_arguments: '-browserType="Chrome" -retry=2 -statusDelay=15 -projectPath="/root/project/test_katalon" -testSuitePath="Test Suites/TS_Staging"'
+      - run_tests:
           requires:
             - deploy_staging
+      # - katalon-studio/run:
+      #     version: "latest"
+      #     command_arguments: '-browserType="Chrome" -retry=2 -statusDelay=15 -projectPath="/root/project/test_katalon" -testSuitePath="Test Suites/TS_Staging"'
+      #     requires:
+      #       - deploy_staging
       - deploy:
           requires:
-            - katalon-studio/run
+            - run_tests
+            # - katalon-studio/run
             # - run_unittests
           # filters:
           #   branches:
