@@ -32,7 +32,7 @@ jobs:
       - checkout
       - run:
           name: Execute Katalon Studio
-          command: cd test_katalon && katalon-execute.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_Staging" -executionProfile="default" -browserType="Chrome (headless)"
+          command: cd test_katalon && katalon-execute.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_Staging" -executionProfile="default" -browserType="Chrome (headless)" --apiKey=$KATALON_API_KEY
   deploy:
     docker:
       - image: cimg/base:2022.04
