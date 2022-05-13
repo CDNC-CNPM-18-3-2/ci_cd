@@ -47,23 +47,23 @@ workflows:
   build-run-and-test:
     jobs:
       - run_unittests
-      # - deploy_staging:
-      #     requires:
-      #       - run_unittests
-      #     filters:
-      #       branches:
-      #         only:
-      #           - main
-      # - katalon-studio/run:
-      #     version: "latest"
-      #     command_arguments: '-browserType="Chrome" -retry=2 -statusDelay=15 --projectPath="/tmp/project/test_katalon" -testSuitePath="Test Suites/TS_RegressionTest"'
-      #     requires:
-      #       - deploy_staging
-      - deploy:
+      - deploy_staging:
           requires:
-            # - katalon-studio/run
             - run_unittests
           filters:
             branches:
               only:
                 - main
+      - katalon-studio/run:
+          version: "latest"
+          command_arguments: '-browserType="Chrome" -retry=2 -statusDelay=15 --projectPath="/tmp/project/test_katalon" -testSuitePath="Test Suites/TS_RegressionTest"'
+          requires:
+            - deploy_staging
+      - deploy:
+          requires:
+            - katalon-studio/run
+            # - run_unittests
+          # filters:
+          #   branches:
+          #     only:
+          #       - main
