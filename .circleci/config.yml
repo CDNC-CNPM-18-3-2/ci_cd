@@ -50,10 +50,10 @@ workflows:
       - deploy_staging:
           requires:
             - run_unittests
-          # filters:
-          #   branches:
-          #     only:
-          #       - main
+          filters:
+            branches:
+              only:
+                - main
       - run_tests:
           requires:
             - deploy_staging
