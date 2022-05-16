@@ -3,7 +3,8 @@ version: 2.1
 orbs:
   node: circleci/node@4.7
   heroku: circleci/heroku@1.2.6
-  katalon-studio: katalon/katalon-studio@23.0.11
+  slack: circleci/slack@4.10.1
+  # katalon-studio: katalon/katalon-studio@23.0.11
 
 jobs:
   run_unittests:
@@ -31,17 +32,23 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Execute Katalon Studio
+          name: Execute Katalon Staging Test Suit
           command: cd test_katalon && katalon-execute.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_Staging" -executionProfile="default" -browserType="Chrome (headless)" --apiKey=$KATALON_API_KEY
   deploy:
     docker:
-      - image: cimg/base:2022.04
+      - image: 'cimg/base:stable'
     steps:
       - run:
           name: Trigger host deployment
           command: |
             curl $DEPLOY_HOOK
             echo 'Triggered deploy'
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
+      - slack/notify:
+          event: pass
+          template: success_tagged_deploy_1
 
 workflows:
   build-run-and-test:
@@ -63,6 +70,7 @@ workflows:
       #     requires:
       #       - deploy_staging
       - deploy:
+          context: slack-secrets
           requires:
             - run_tests
             # - katalon-studio/run
@@ -70,4 +78,4 @@ workflows:
           # filters:
           #   branches:
           #     only:
-          #       - main
+          #       - main         
