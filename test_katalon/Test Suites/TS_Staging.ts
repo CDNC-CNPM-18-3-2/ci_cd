@@ -134,4 +134,11 @@
          <variableId>a9a2b63f-29d8-42ec-acd4-8a5880498256</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5a0cc629-8ef2-4fad-b4ff-090a1f816a33</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/UI Main Page Click</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
