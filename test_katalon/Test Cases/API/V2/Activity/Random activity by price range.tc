@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random activity by price range</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>998719d7-5123-4776-825e-e3dd609a3e7b</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>e99de943-6a87-464b-9200-b685e8865249</id>
+      <masked>false</masked>
+      <name>minprice</name>
+   </variable>
+   <variable>
+      <defaultValue>0.1</defaultValue>
+      <description></description>
+      <id>9123c845-1378-4676-88ae-f52723fe779f</id>
+      <masked>false</masked>
+      <name>maxprice</name>
+   </variable>
+</TestCaseEntity>

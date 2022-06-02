@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random activity by accessibility and participants</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff17a3e7-4a54-4dc4-850f-1ed8926948af</testCaseGuid>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>6158c049-a52e-4b50-891a-c4d6b7c3fae9</id>
+      <masked>false</masked>
+      <name>accessibility</name>
+   </variable>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>eb1b0140-3431-477f-9e9a-d6de6b103156</id>
+      <masked>false</masked>
+      <name>participants</name>
+   </variable>
+</TestCaseEntity>

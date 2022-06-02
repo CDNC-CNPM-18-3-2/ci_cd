@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random an activity with a given price</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a442120-4309-46ee-b692-0f6412f99592</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description>A factor describing the cost of the event with zero being free [0, 1]</description>
+      <id>d2520d22-e9dd-4981-b379-07785aae46c3</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variable>
+</TestCaseEntity>

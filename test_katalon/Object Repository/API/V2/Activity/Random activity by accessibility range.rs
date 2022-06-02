@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get by type activity</name>
+   <name>Random activity by accessibility range</name>
    <tag></tag>
-   <elementGuidId>bbb58233-e045-4d4a-9c88-b721585cc64a</elementGuidId>
+   <elementGuidId>b68cee29-4727-4450-81f0-4168c891c884</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.HOST_URL}/api/activity?type=${type}</restUrl>
+   <restUrl>${GlobalVariable.HOST_URL}/api/activity?minaccessibility=${minaccessibility}&amp;maxaccessibility=${maxaccessibility}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -25,11 +25,18 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'education'</defaultValue>
+      <defaultValue>0</defaultValue>
       <description></description>
       <id>b26f2491-c527-47ad-87b7-2032a09c431c</id>
       <masked>false</masked>
-      <name>type</name>
+      <name>minaccessibility</name>
+   </variables>
+   <variables>
+      <defaultValue>0.1</defaultValue>
+      <description></description>
+      <id>686c54c9-1afd-4ea2-9f9c-91122385983a</id>
+      <masked>false</masked>
+      <name>maxaccessibility</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random an activity with a given accessibility</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7185ee25-f1a0-45ca-aa64-7b0864f2c101</testCaseGuid>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description>A factor describing how possible an event is to do with zero being the most accessible [0.0, 1.0]</description>
+      <id>04ddde96-9225-485c-b661-adc9fcbe1a0b</id>
+      <masked>false</masked>
+      <name>accessibility</name>
+   </variable>
+</TestCaseEntity>

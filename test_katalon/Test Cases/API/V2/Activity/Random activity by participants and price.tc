@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random activity by participants and price</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>092b7b37-b84b-4c85-b76b-ce0cb97e7f17</testCaseGuid>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>d1f48010-2350-4a76-8a67-bbc24a8e436c</id>
+      <masked>false</masked>
+      <name>participants</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>848485d0-29cd-4549-b877-c179be0972b5</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random activity by accessibility and price</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>794f30e0-86c8-4e35-b631-26d8f7752528</testCaseGuid>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>a1c6bd58-8c7c-4cb9-84c9-eecb9d618940</id>
+      <masked>false</masked>
+      <name>accessibility</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>a0b5643f-67e8-49b0-b7f4-012fb3ecdad6</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variable>
+</TestCaseEntity>

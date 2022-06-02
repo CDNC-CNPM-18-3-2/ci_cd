@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random an activity with a given accessibility range</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a731e9f3-0f17-4e9d-8b49-cf46001aefb2</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description>A factor describing how possible an event is to do with zero being the most accessible [0.0, 1.0]</description>
+      <id>fdc49561-2dbe-4f92-8f12-e995aa33019d</id>
+      <masked>false</masked>
+      <name>minaccessibility</name>
+   </variable>
+   <variable>
+      <defaultValue>0.1</defaultValue>
+      <description></description>
+      <id>fbdcca0f-afbc-465b-b02f-8caa3e56943e</id>
+      <masked>false</masked>
+      <name>maxaccessibility</name>
+   </variable>
+</TestCaseEntity>

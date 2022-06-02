@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Contribute</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9891262f-081a-42a4-bbab-0b94ac026800</testCaseGuid>
+   <variable>
+      <defaultValue>'Critical thinking'</defaultValue>
+      <description></description>
+      <id>27aae6db-d80f-4ce9-a9aa-331cb1d56553</id>
+      <masked>false</masked>
+      <name>activity</name>
+   </variable>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>5f8353a1-b787-4e46-8093-85c1c09a1cde</id>
+      <masked>false</masked>
+      <name>participant</name>
+   </variable>
+</TestCaseEntity>

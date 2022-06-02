@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random activity by participant and type</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8b96fd37-0cf0-42fe-8042-86a4eeaa5536</testCaseGuid>
+   <variable>
+      <defaultValue>'education'</defaultValue>
+      <description></description>
+      <id>8083521a-a3b9-47c1-9b53-fac91a5e9bd9</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>160bccef-0aba-487e-acf8-21048cd9ff62</id>
+      <masked>false</masked>
+      <name>participants</name>
+   </variable>
+</TestCaseEntity>

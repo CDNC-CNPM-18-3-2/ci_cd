@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 query_type = type
 
-response = WS.sendRequest(findTestObject('API/V2/Activity/Get by type activity', ["type": query_type]))
+response = WS.sendRequest(findTestObject('API/V2/Activity/Get by key activity', ["type": query_type]))
 
 WS.verifyResponseStatusCode(response, 200)
 

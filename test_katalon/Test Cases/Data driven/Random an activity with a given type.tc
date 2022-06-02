@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random an activity with a given type</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ea90b962-efde-4810-ba21-5acda87b3a05</testCaseGuid>
+   <variable>
+      <defaultValue>'recreational'</defaultValue>
+      <description></description>
+      <id>20ae105a-522e-49eb-a3d8-5a019471c42a</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variable>
+</TestCaseEntity>

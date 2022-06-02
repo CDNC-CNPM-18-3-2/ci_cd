@@ -16,7 +16,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/API/V2/Activity/Get random activity</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>0db72792-889a-4ddd-be48-b4de39f49e08</guid>
@@ -32,7 +31,6 @@
          </iterationEntity>
          <testDataId>Data Files/Activity/Data activity</testDataId>
       </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>02127df8-646f-42b9-b58c-b2dce70551e5</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -90,7 +88,6 @@
          </iterationEntity>
          <testDataId>Data Files/Activity/Data activity</testDataId>
       </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -135,11 +132,277 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>5a0cc629-8ef2-4fad-b4ff-090a1f816a33</guid>
+      <guid>55b4d973-99da-41f0-992b-8dcff0b3f6d9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/UI Main Page Click</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by accessibility and participants</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b56beb91-34f0-4ea7-987b-6b90cd3f71a1</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Activity/Data activity</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>b56beb91-34f0-4ea7-987b-6b90cd3f71a1</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>accessibility</value>
+         <variableId>6158c049-a52e-4b50-891a-c4d6b7c3fae9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b56beb91-34f0-4ea7-987b-6b90cd3f71a1</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>participants</value>
+         <variableId>eb1b0140-3431-477f-9e9a-d6de6b103156</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>578b4dcf-731e-44b5-a68d-876d0c09ade3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by accessibility and price</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>860c8be2-a793-4c6b-b7d9-9f9180172f9e</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Activity/Data activity</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>860c8be2-a793-4c6b-b7d9-9f9180172f9e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>accessibility</value>
+         <variableId>a1c6bd58-8c7c-4cb9-84c9-eecb9d618940</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>860c8be2-a793-4c6b-b7d9-9f9180172f9e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>price</value>
+         <variableId>a0b5643f-67e8-49b0-b7f4-012fb3ecdad6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8fca2a36-fbd0-4e1f-bc8b-c3eb52ca71b6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by accessibility and type</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>08d2f655-794a-4340-91c3-e35426964c59</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Activity/Data activity</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>08d2f655-794a-4340-91c3-e35426964c59</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>accessibility</value>
+         <variableId>d0a2a262-c4d3-469b-86ba-4ded8d251f36</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>08d2f655-794a-4340-91c3-e35426964c59</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>type</value>
+         <variableId>e0baebf0-190b-40ce-9eef-dd5e7b1114e7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>81f14a29-2f52-4070-ba8b-85fd7a99a0bc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by accessibility range</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>4409c030-bf22-4f84-9328-49b37c464e23</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Range/accessibilities</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>4409c030-bf22-4f84-9328-49b37c464e23</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>minaccessibility</value>
+         <variableId>ad183763-d70f-4334-ab18-176666a77160</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4409c030-bf22-4f84-9328-49b37c464e23</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>maxaccessibility</value>
+         <variableId>269d3051-66f2-446b-bc9b-fd56d00f51b9</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d23a6167-1956-4a61-9b60-b161c6a7873e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by accessibility</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b3cddb98-18e3-4a33-a8db-7b9a8e28c073</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Activity/Data activity</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>b3cddb98-18e3-4a33-a8db-7b9a8e28c073</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>accessibility</value>
+         <variableId>71e35b53-5bf7-44a2-bf73-6f7ccddc1a2d</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>546eca2b-6040-4dcb-bf25-9f79d0bcff22</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by participant and type</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>359563b9-ca9b-4a51-a605-7e36af766046</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Activity/Data activity</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>359563b9-ca9b-4a51-a605-7e36af766046</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>type</value>
+         <variableId>8083521a-a3b9-47c1-9b53-fac91a5e9bd9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>359563b9-ca9b-4a51-a605-7e36af766046</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>participants</value>
+         <variableId>160bccef-0aba-487e-acf8-21048cd9ff62</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>01b9b3e6-a5ac-4735-8844-6132b8df2339</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by participants and price</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3c114045-def4-424a-b157-f05cc6b9590c</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Activity/Data activity</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>3c114045-def4-424a-b157-f05cc6b9590c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>participants</value>
+         <variableId>d1f48010-2350-4a76-8a67-bbc24a8e436c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3c114045-def4-424a-b157-f05cc6b9590c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>price</value>
+         <variableId>848485d0-29cd-4549-b877-c179be0972b5</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3dafb331-193b-466e-a673-49b447fbdf91</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by participants</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>86f067ba-5fe1-4027-b9ac-dd6fddf741e9</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Activity/Data activity</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>86f067ba-5fe1-4027-b9ac-dd6fddf741e9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>participants</value>
+         <variableId>f9252a13-bff7-45b7-99f5-746afbc1bafb</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9d0dc089-a2b9-42e9-ba62-7fcbd91ac9a4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by price range</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>f21c7a67-b624-4b9f-b69e-b2ca5e0e1e20</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Range/price</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>f21c7a67-b624-4b9f-b69e-b2ca5e0e1e20</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>minprice</value>
+         <variableId>e99de943-6a87-464b-9200-b685e8865249</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f21c7a67-b624-4b9f-b69e-b2ca5e0e1e20</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>maxprice</value>
+         <variableId>9123c845-1378-4676-88ae-f52723fe779f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4adf8166-f22b-4450-8b24-67be0fddc584</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by price</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>a474c141-bdac-4569-abca-8b0f64fffe17</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Activity/Data activity</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>a474c141-bdac-4569-abca-8b0f64fffe17</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>price</value>
+         <variableId>1dc63459-f4cd-46a1-8e2c-22b453e6ec6a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8cc7dba9-fbe0-4691-bba3-a2dd151b5157</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/API/V2/Activity/Random activity by type</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0edd994d-5106-47c9-9b30-04d2e44afe68</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Activity/Data activity</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>0edd994d-5106-47c9-9b30-04d2e44afe68</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>type</value>
+         <variableId>38c6fd3d-cc0d-4883-aa89-d7ebed7ac4e4</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>85f1809f-a518-4e40-9252-845c7d6ef8c1</guid>

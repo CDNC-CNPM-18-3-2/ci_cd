@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random an activity with a given type and participants and price</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3964d165-9e60-49da-ba03-b2a296c4d0f2</testCaseGuid>
+   <variable>
+      <defaultValue>'education'</defaultValue>
+      <description></description>
+      <id>8407b3e9-cd95-4017-b5eb-fd366f559d97</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variable>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>5b99a32d-0e8a-4481-8f91-1334dcb2f5a9</id>
+      <masked>false</masked>
+      <name>participants</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>5dc16b43-3eb7-4a21-bc5d-e70b0e0b53a5</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random an activity with a given price range</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a88f29ca-84af-4886-9425-a449a301d541</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description>A factor describing the cost of the event with zero being free [0, 1]</description>
+      <id>60999e5a-c2f9-4908-89d8-3af3ffac0aeb</id>
+      <masked>false</masked>
+      <name>minprice</name>
+   </variable>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>8e5b0152-27c3-4748-a378-4636784e083e</id>
+      <masked>false</masked>
+      <name>maxprice</name>
+   </variable>
+</TestCaseEntity>

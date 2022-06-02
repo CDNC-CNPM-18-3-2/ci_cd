@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random activity by accessibility range</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd9c2b8a-82ad-4442-8338-7e1aa57c23d8</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>ad183763-d70f-4334-ab18-176666a77160</id>
+      <masked>false</masked>
+      <name>minaccessibility</name>
+   </variable>
+   <variable>
+      <defaultValue>0.1</defaultValue>
+      <description></description>
+      <id>269d3051-66f2-446b-bc9b-fd56d00f51b9</id>
+      <masked>false</masked>
+      <name>maxaccessibility</name>
+   </variable>
+</TestCaseEntity>

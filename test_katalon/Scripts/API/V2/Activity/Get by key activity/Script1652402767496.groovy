@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 query_key = key
 
-response = WS.sendRequest(findTestObject('API/V2/Activity/Get by option activity', ["key": query_key]))
+response = WS.sendRequest(findTestObject('API/V2/Activity/Get by key activity', ["key": query_key]))
 
 WS.verifyResponseStatusCode(response, 200)
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random activity by accessibility</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>45308a26-a094-4e5d-b66e-ea051875697c</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>71e35b53-5bf7-44a2-bf73-6f7ccddc1a2d</id>
+      <masked>false</masked>
+      <name>accessibility</name>
+   </variable>
+</TestCaseEntity>

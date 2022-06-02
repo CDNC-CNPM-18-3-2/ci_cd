@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random activity by participants</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fea48e19-4d0d-48f9-a6db-d931d422be69</testCaseGuid>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>f9252a13-bff7-45b7-99f5-746afbc1bafb</id>
+      <masked>false</masked>
+      <name>participants</name>
+   </variable>
+</TestCaseEntity>

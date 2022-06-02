@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random an activity with a given type and price</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f5455b08-ec31-4a7d-b485-5781ea0fe1bf</testCaseGuid>
+   <variable>
+      <defaultValue>'education'</defaultValue>
+      <description></description>
+      <id>bb79eb49-574c-4db8-811f-a1955f00e8d1</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>ffdc17e2-f15a-40c4-ae95-f12c03eff9b7</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Random an activity with a given type and accessibility and price</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0a1952a9-e0a8-495a-af33-24b9fdb35f10</testCaseGuid>
+   <variable>
+      <defaultValue>'education'</defaultValue>
+      <description></description>
+      <id>1b1060ad-b7e9-4d2d-a409-084e9de6c7d4</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variable>
+   <variable>
+      <defaultValue>0.6</defaultValue>
+      <description></description>
+      <id>a6ad1abb-acea-4c00-9fb2-e37f0b7aca18</id>
+      <masked>false</masked>
+      <name>accessibility</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>2fd9ce17-b695-45ae-8912-3c8427e7dddb</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variable>
+</TestCaseEntity>
