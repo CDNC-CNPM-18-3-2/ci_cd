@@ -13,11 +13,11 @@
 		</div>
 
 		<div class="content">
-			<h1>Try it out</h1>
+			<h1>Try it out updated ci/cd</h1>
 			<div class="search">
 				<span>https://www.boredapi.com/api/</span>
 				<input type="text" v-model="endpoint"></input>
-				<!-- <button @click="query(endpoint)">Submit</button> -->
+				<button @click="query(endpoint)">Submit</button>
 			</div>
 			<div class="hint">
 				<p>Try a few others: <a
