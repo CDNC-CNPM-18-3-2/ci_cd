@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://localhost:8080/')
+WebUI.navigateToUrl(GlobalVariable.HOST_URL)
 
 WebUI.click(findTestObject('Object Repository/Record-playback/Test case 10/Page_Bored API/a_About'))
 
