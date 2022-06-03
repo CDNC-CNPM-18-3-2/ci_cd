@@ -36,6 +36,10 @@ jobs:
       - run:
           name: Execute Katalon Staging Test Suit
           command: cd test_katalon && katalon-execute.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_Staging" -executionProfile="default" -browserType="Chrome (headless)" --apiKey=$KATALON_API_KEY
+      - store_test_results:
+          path: ./test_katalon/report
+      - store_artifacts:
+          path: ./test_katalon/report
       - slack/notify:
           event: fail
           template: basic_fail_1
