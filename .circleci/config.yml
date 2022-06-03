@@ -4,7 +4,6 @@ orbs:
   node: circleci/node@4.7
   heroku: circleci/heroku@1.2.6
   slack: circleci/slack@4.10.1
-  # katalon-studio: katalon/katalon-studio@23.0.11
 
 jobs:
   run_unittests:
@@ -20,6 +19,9 @@ jobs:
           name: Run Unit Tests
           command: |
             npm run test
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
   deploy_staging:
     executor: heroku/default
     steps:
@@ -34,9 +36,12 @@ jobs:
       - run:
           name: Execute Katalon Staging Test Suit
           command: cd test_katalon && katalon-execute.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_Staging" -executionProfile="default" -browserType="Chrome (headless)" --apiKey=$KATALON_API_KEY
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
   deploy:
     docker:
-      - image: 'cimg/base:stable'
+      - image: "cimg/base:stable"
     steps:
       - run:
           name: Trigger host deployment
@@ -53,7 +58,8 @@ jobs:
 workflows:
   build-run-and-test:
     jobs:
-      - run_unittests
+      - run_unittests:
+          context: slack-secrets
       - deploy_staging:
           requires:
             - run_unittests
@@ -62,20 +68,10 @@ workflows:
               only:
                 - main
       - run_tests:
+          context: slack-secrets
           requires:
             - deploy_staging
-      # - katalon-studio/run:
-      #     version: "latest"
-      #     command_arguments: '-browserType="Chrome" -retry=2 -statusDelay=15 -projectPath="/root/project/test_katalon" -testSuitePath="Test Suites/TS_Staging"'
-      #     requires:
-      #       - deploy_staging
       - deploy:
           context: slack-secrets
           requires:
             - run_tests
-            # - katalon-studio/run
-            # - run_unittests
-          # filters:
-          #   branches:
-          #     only:
-          #       - main         
